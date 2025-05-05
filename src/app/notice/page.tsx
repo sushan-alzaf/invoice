@@ -1,7 +1,8 @@
 "use client";
-import { InvoiceViewer } from "./components/Invoice";
 
-export default function InvoicePage() {
+import { NoticeViewer } from "./components/NoticePdf";
+
+export default function NoticePage() {
   // Example data - replace with your actual data
   const invoiceData = {
     receipt_no: "INV-2023-001",
@@ -26,7 +27,7 @@ export default function InvoicePage() {
   return (
     <div className="container mx-auto p-4">
       <div className="border rounded-lg overflow-hidden">
-        <InvoiceViewer data={invoiceData} />
+        <NoticeViewer data={invoiceData} />
       </div>
     </div>
   );
